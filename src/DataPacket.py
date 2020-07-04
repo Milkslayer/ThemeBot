@@ -14,6 +14,7 @@ def make_member_object(name: str):
     return {
         name: {
             'token': '',
-            'suggestions': []
+            'suggestions': [],
+            "token_received": False
         }
     }

@@ -27,13 +27,21 @@ SELECTION_PROCESS_ALREADY_STARTED = "Theme selection process has already been in
 SELECTION_NOT_STARTED = "You must initiate the selection process in a group"
 
 CANNOT_REQUEST_TOKEN_IN_GROUP = "You cannot request Token in a group"
+CANNOT_REQUEST_SEED_IN_GROUP = "You can only generate a seed in group chat"
+CANNOT_DO_THIS_IN_GROUP = "You cannot do this in a group."
 GENERATED_TOKEN_IS = "Yor token is generated: %s"
 TOKEN_ALREADY_GENERATED = "You already have a token: %s"
-
 SEED_NOT_GENERATED = "You must must generate a seed to use this command"
-
 GENERATED_THEME_IS = "Your new theme is: %s"
 THEME_ALREADY_SELECTED = "The theme is already selected. The theme is: %s"
-
 UNKNOWN_COMMAND = "Sorry, I didn't understand that command."
 
+MEMBER_NOT_ADDED_SUGGESTIONS_username = "%s has not added any suggestions."
+START_SEED_GENERATION = "Seed generation has begun. Please give me your generated tokens."
+SEND_ME_SUGGESTIONS = '''Send me a message with your suggestions (separated by ',') 
+Please don't try anything funny. My developer did not implement any error handling'''
+
+SUGGESTIONS_ADDED = "Thank you. Your suggestions have been added."
+THANK_YOU = "Thank You!"
+YOUR_SUGGESTIONS_ARE = "Your suggestions are: "
+TOKEN_NOT_GENERATED = "You need to generate a token first."
