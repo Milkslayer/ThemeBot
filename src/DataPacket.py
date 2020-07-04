@@ -1,6 +1,6 @@
 members = {}
 theme = None
-seed = ""
+seed = None
 is_process_started = False
 is_seed_generated = False
 

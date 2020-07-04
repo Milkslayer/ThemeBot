@@ -2,6 +2,10 @@ import json
 from pathlib import Path
 
 
+def make_dir(dir_path):
+    Path(dir_path).mkdir()
+
+
 def file_exists(file_path: str) -> bool:
     if Path(file_path).exists():
         return True

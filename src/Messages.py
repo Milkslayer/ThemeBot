@@ -29,15 +29,20 @@ SELECTION_NOT_STARTED = "You must initiate the selection process in a group"
 CANNOT_REQUEST_TOKEN_IN_GROUP = "You cannot request Token in a group"
 CANNOT_REQUEST_SEED_IN_GROUP = "You can only generate a seed in group chat"
 CANNOT_DO_THIS_IN_GROUP = "You cannot do this in a group."
+MUST_BE_IN_GROUP = "You must be in  group to do this."
 GENERATED_TOKEN_IS = "Yor token is generated: %s"
 TOKEN_ALREADY_GENERATED = "You already have a token: %s"
+TOKEN_RECEIVED_FROM = "Token received from %s."
+WAITING_FOR_TOKEN_FROM = "Waiting for token from %s."
+ALL_TOKENS_RECEIVED = "All tokens have been received"
 SEED_NOT_GENERATED = "You must must generate a seed to use this command"
+SEED_IS_GENERATED = "Seed is already generated. Seed is %s."
 GENERATED_THEME_IS = "Your new theme is: %s"
 THEME_ALREADY_SELECTED = "The theme is already selected. The theme is: %s"
 UNKNOWN_COMMAND = "Sorry, I didn't understand that command."
 
 MEMBER_NOT_ADDED_SUGGESTIONS_username = "%s has not added any suggestions."
-START_SEED_GENERATION = "Seed generation has begun. Please give me your generated tokens."
+START_SEED_GENERATION = "Seed generation has begun. Please give me your generated tokens in this format: /token TOKEN"
 SEND_ME_SUGGESTIONS = '''Send me a message with your suggestions (separated by ',') 
 Please don't try anything funny. My developer did not implement any error handling'''
 
