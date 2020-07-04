@@ -4,7 +4,7 @@ import DataPacket
 from Utils import IO
 
 
-TOKEN = "1238814925:AAEDGo71Q5qmPTN1Zh8eOsv9l-r4IlOFx8k"
+TOKEN = "TOKEN"
 
 
 def init():
