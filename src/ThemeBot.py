@@ -203,7 +203,13 @@ def collecting_suggestions(update, context):
     if DEBUG:
         print(update)
     suggestions = update.message.text.split(',')
-    DataPacket.members[update.effective_user.username]["suggestions"] += suggestions
+    for suggestion in suggestions:
+        suggestion = suggestion.lower()
+        if len(suggestion) == 0:
+            continue
+        if suggestion in DataPacket.members[update.effective_user.username]["suggestions"]:
+            continue
+        DataPacket.members[update.effective_user.username]["suggestions"].append(suggestion)
     IO.save_file_json(Constants.DATA_PATH + Constants.DATA_MEMBERS_FILENAME, DataPacket.members)
 
     context.bot.send_message(chat_id=update.effective_chat.id, text=Messages.SUGGESTIONS_ADDED)
@@ -212,7 +218,6 @@ def collecting_suggestions(update, context):
 
 def finished_adding_suggestions(update, context):
     suggestions = DataPacket.members[update.effective_user.username]["suggestions"]
-    print(suggestions)
     context.bot.send_message(chat_id=update.effective_chat.id, text=Messages.YOUR_SUGGESTIONS_ARE + str(suggestions))
     return ConversationHandler.END
 
